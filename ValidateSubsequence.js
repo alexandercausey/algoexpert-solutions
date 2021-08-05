@@ -12,3 +12,6 @@ const testSequence = [1, 6, 8];
 const expected = true;
 
 console.log('Returns: ', isValidSubsequence(testArray, testSequence), ' Expected: ', expected);
+
+//Time Complexity: O(n)
+//Space Complexity: O(1)
