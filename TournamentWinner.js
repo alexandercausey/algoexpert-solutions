@@ -26,3 +26,6 @@ function tournamentWinner(competitions, results) {
 	}
   return winner;
 };
+
+//Time Complexity: O(n)
+//Space Complexity: O(k)
