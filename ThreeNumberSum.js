@@ -13,5 +13,5 @@ function threeNumberSum(array, targetSum) {
 	return results;
 }
 
-//time: O(n^4)
+//time: O(n^3)
 //space: O(n)
