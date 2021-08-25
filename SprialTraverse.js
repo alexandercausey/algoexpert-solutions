@@ -2,13 +2,25 @@ function spiralTraverse(array) {
 	if (array[0].length === 0) {
 		return [];
 	}
+  if (array.length === 2) {
+    return array[0].concat(array[1].reverse());
+  }
 	const result = [];
 	if (array[0].length === 1) {
-		for (let i = 0; i < array.legth; i++) {
+		for (let i = 0; i < array.length; i++) {
 			result.push(array[i][0]);
 		}
 		return result;
 	}
+  if (array[0].length === 2) {
+    const front = [array[0][0], array[0][1]];
+    const back = [];
+    for (let i = 1; i < array.length; i++) {
+      front.push(array[i][1]);
+      back.unshift(array[i][0]);
+    }
+    return front.concat(back);
+  }
   let iMax = array[0].length - 1;
 	let iMin = 0;
 	let jMax = array.length - 1;
