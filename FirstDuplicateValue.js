@@ -13,4 +13,4 @@ function firstDuplicateValue(array) {
 }
 
 //space: O(n) n=input array
-//time: O(n + log(n))
+//time: O(n ^ 2)
